@@ -18,6 +18,8 @@ import {
 import reduxThunk from 'redux-thunk';
 import reducers from './reducers';
 
+import App from './components/app';
+
 // Create Redux store
 const createStoreWithMiddleware = applyMiddleware( reduxThunk )( createStore );
 const store = createStoreWithMiddleware( reducers );
