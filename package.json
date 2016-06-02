@@ -1,0 +1,24 @@
+{
+  "name": "react-redux-todo",
+  "version": "0.0.0",
+  "description": "A very basic Todo app written with React / Redux for a coding challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaspervalero/react-redux-todo.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "todo"
+  ],
+  "author": "Jasper Valero <contact@jaspervalero.com> (http://jaspervalero.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaspervalero/react-redux-todo/issues"
+  },
+  "homepage": "https://github.com/jaspervalero/react-redux-todo#readme"
+}
