@@ -74,7 +74,9 @@ class Boards extends React.Component {
 			});
 
 			// Set width of content based on number of boards
-			content.style.width = ( 280 * ( this.props.boards.length + 1 ) ) + 'px';
+			if ( content ) {
+				content.style.width = ( 280 * ( this.props.boards.length + 1 ) ) + 'px';
+			}
 
 			return boards;
 		}
