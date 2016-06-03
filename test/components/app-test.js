@@ -5,7 +5,7 @@
  * @author Jasper Valero <contact@jaspervalero.com>
  * https://github.com/jaspervalero/react-redux-todo
  */
-import { renderComponent, expect } from '../test_helper';
+import { renderComponent, expect } from '../test-helpers';
 import App from '../../src/components/app';
 
 describe( 'Component:App', () => {

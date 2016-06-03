@@ -19,6 +19,7 @@ import reduxThunk from 'redux-thunk';
 import reducers from './reducers';
 
 import App from './components/app';
+import Home from './components/home';
 
 // Create Redux store
 const createStoreWithMiddleware = applyMiddleware( reduxThunk )( createStore );
@@ -27,7 +28,9 @@ const store = createStoreWithMiddleware( reducers );
 ReactDOM.render(
 	<Provider store={ store }>
 		<Router history={ browserHistory }>
-			<Route path="/" component={ App }></Route>
+			<Route path="/" component={ App }>
+				<IndexRoute component={ Home } />
+			</Route>
 		</Router>
 	</Provider>
 	, document.querySelector( '.wrapper' )

@@ -12,7 +12,6 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<div className="app" id="app">
-				<p>TODO</p>
 				{ this.props.children }
 			</div>
 		);
