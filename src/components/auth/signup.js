@@ -15,7 +15,7 @@ class Signup extends React.Component {
 		const { handleSubmit, fields: { email, password, passwordConfirm }} = this.props;
 
 		return (
-			<div className="content">
+			<div className="signup content container">
 				<form onSubmit={ handleSubmit( this.onFormSubmit.bind( this ) ) }>
 					<fieldset className="form-group">
 						<label>Email:</label>

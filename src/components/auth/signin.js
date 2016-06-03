@@ -15,7 +15,7 @@ class Signin extends React.Component {
 		const { handleSubmit, fields: { email, password } } = this.props;
 
 		return (
-			<div className="content">
+			<div className="signin content container">
 				<form onSubmit={ handleSubmit( this.onFormSubmit.bind( this ) ) }>
 					<fieldset className="form-group">
 						<label>Email:</label>

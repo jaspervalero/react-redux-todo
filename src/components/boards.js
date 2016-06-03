@@ -19,7 +19,7 @@ class Boards extends React.Component {
 
 	render() {
 		return (
-			<div className="content" id="content">
+			<div className="boards content" id="content">
 				{ this.renderBoards() }
 				<div className="column">
 					<div className="board-placeholder board panel panel-success">
