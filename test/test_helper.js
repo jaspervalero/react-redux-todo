@@ -36,7 +36,7 @@ chaiJquery( chai, chai.util, $ );
  */
 function renderComponent( ComponentClass, props = {}, state = {} ) {
 	const componentInstance = TestUtils.renderIntoDocument(
-		<Provider store={ createSTore( reducers, state ) }>
+		<Provider store={ createStore( reducers, state ) }>
 			<ComponentClass { ...props } />
 		</Provider>
 	);
