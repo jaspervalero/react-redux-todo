@@ -1,0 +1,89 @@
+/**
+ * react-redux-todo
+ * Custom Styles
+ *
+ * @author Jasper Valero <contact@jaspervalero.com>
+ * https://github.com/jaspervalero/react-redux-todo
+ */
+
+/*_____GENERAL_____*/
+
+.error {
+	color: #f00;
+}
+
+.edit-btn, .delete-btn {
+	cursor: pointer;
+	color: #000;
+}
+
+/*_____HEADER______*/
+
+.todo-icon {
+	font-size: 15px;
+}
+
+/*_____CONTENT_____*/
+
+.content {
+	margin-top: 70px;
+	width: 100%;
+	overflow: auto;
+}
+
+/*_____BOARDS_____*/
+
+.board {
+	width: 270px;
+	float: left;
+	margin: 0 5px 10px;
+}
+
+.board-placeholder {
+	cursor: pointer;
+}
+
+/*_____CARDS_____*/
+
+.card-list {
+	min-width: 238px;
+	min-height: 42px;
+}
+
+.card {
+	background: #f5f5f5;
+	word-wrap: break-word;
+	cursor: pointer;
+}
+
+.card:hover {
+	background: #0067a3;
+	color: #fff;
+}
+
+
+
+/*______OVERRIDE BOOTSTRAP STYLES_____*/
+
+.navbar-default {
+	background: #0067a3;
+	border-color: #004f7c;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+}
