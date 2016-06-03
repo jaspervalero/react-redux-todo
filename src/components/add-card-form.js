@@ -82,14 +82,18 @@ function validate( formProps ) {
 		errors.title = 'Required';
 	}
 
-	if ( ! /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test( formProps.assignee ) ) {
-		errors.assignee = 'Invalid email address'
+	if ( formProps.assignee ) {
+		if ( ! /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test( formProps.assignee ) ) {
+			errors.assignee = 'Must be a valid email address'
+		}
 	}
 
-	if ( ! /^\d{4}-\d{1,2}-\d{1,2}$/.test( formProps.due_date ) ) {
-		errors.due_date = "You must specify a date in the YYYY-MM-DD format"
-	} else if ( selectedDate < now ) {
-		errors.due_date = 'Due date is in the past'
+	if ( formProps.due_date ) {
+		if ( ! /^\d{4}-\d{1,2}-\d{1,2}$/.test( formProps.due_date ) ) {
+			errors.due_date = "You must specify a date in the YYYY-MM-DD format"
+		} else if ( selectedDate < now ) {
+			errors.due_date = 'Due date is in the past'
+		}
 	}
 
 	return errors;
