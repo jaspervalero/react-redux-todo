@@ -30,12 +30,12 @@ describe( 'Component:Home', () => {
 		expect( h1 ).to.contain( 'Hello, doer!' );
 	});
 
-	it( 'has a <h3> that contains "Start tackling our TODO list today!"',
+	it( 'has a <h3> that contains "Start tackling your TODO list today!"',
 		() => {
 		const h2 = component.find( 'h2' );
 
 		expect( h2 ).to.exist;
-		expect( h2 ).to.contain( 'Start tackling our TODO list today!' );
+		expect( h2 ).to.contain( 'Start tackling your TODO list today!' );
 	});
 
 	it( 'has a <p> that contains some text', () => {
