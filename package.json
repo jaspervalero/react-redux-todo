@@ -1,6 +1,6 @@
 {
   "name": "react-redux-todo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very basic Todo app written with React / Redux for a coding challenge.",
   "main": "index.js",
   "scripts": {
