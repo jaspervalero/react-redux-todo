@@ -55,14 +55,14 @@ class EditCardForm extends React.Component {
 		);
 	}
 
-	onFormSubmit({ title, description, assignee, dueDate }) {
+	onFormSubmit({ title, description, assignee, due_date }) {
 		this.props.editCard({
 			boardIndex: this.props.currentBoardIndex,
 			id: this.props.currentEditId,
 			title,
 			description,
 			assignee,
-			dueDate,
+			due_date,
 			boardId: this.props.currentBoardId
 		});
 	}

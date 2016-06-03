@@ -169,7 +169,7 @@ export function fetchCard( cardId ) {
 	}
 }
 
-export function addCard({ title, description, assignee, dueDate, boardIndex, boardId }) {
+export function addCard({ title, description, assignee, due_date, boardIndex, boardId }) {
 	return function( dispatch ) {
 		axios.post( `${ API_BASE_URL }/cards`, {
 			headers: { authorization: localStorage.getItem( 'token' ) },
@@ -177,7 +177,7 @@ export function addCard({ title, description, assignee, dueDate, boardIndex, boa
 			title,
 			description,
 			assignee,
-			due_date: dueDate
+			due_date: due_date
 		})
 			.then( response => {
 				dispatch({
@@ -193,7 +193,7 @@ export function addCard({ title, description, assignee, dueDate, boardIndex, boa
 	};
 }
 
-export function editCard({ boardIndex, id, title, description, assignee, dueDate }) {
+export function editCard({ boardIndex, id, title, description, assignee, due_date }) {
 	return function( dispatch ) {
 		axios.put( `${ API_BASE_URL }/cards`, {
 			headers: { authorization: localStorage.getItem( 'token' ) },
@@ -201,7 +201,7 @@ export function editCard({ boardIndex, id, title, description, assignee, dueDate
 			title,
 			description,
 			assignee,
-			due_date: dueDate
+			due_date: due_date
 		})
 			.then( response => {
 				dispatch({
@@ -213,7 +213,7 @@ export function editCard({ boardIndex, id, title, description, assignee, dueDate
 							title,
 							description,
 							assignee,
-							due_date: dueDate
+							due_date: due_date
 						}
 					}
 				});
