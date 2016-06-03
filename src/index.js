@@ -16,14 +16,18 @@ import {
 	browserHistory
 } from 'react-router';
 import reduxThunk from 'redux-thunk';
-import reducers from './reducers';
 
+
+import reducers from './reducers';
 import App from './components/app';
 import Home from './components/home';
 import Signup from './components/auth/signup';
 import Signin from './components/auth/signin';
 import Signout from './components/auth/signout';
 import RequireAuth from './components/auth/require-auth';
+import Boards from './components/boards';
+import AddCardForm from './components/add-card-form';
+import EditCardForm from './components/edit-card-form';
 import { AUTH_USER } from './actions/types';
 
 // Create Redux store
@@ -48,6 +52,9 @@ ReactDOM.render(
 				<Route path="signup" component={ Signup } />
 				<Route path="signin" component={ Signin } />
 				<Route path="signout" component={ Signout } />
+				<Route path="boards" component={ RequireAuth( Boards ) } />
+				<Route path="add-form" component={ RequireAuth( AddCardForm ) } />
+				<Route path="edit-form" component={ RequireAuth( EditCardForm ) } />
 			</Route>
 		</Router>
 	</Provider>

@@ -6,6 +6,17 @@
  * https://github.com/jaspervalero/react-redux-todo
  */
 
+/*_____GENERAL_____*/
+
+.error {
+	color: #f00;
+}
+
+.edit-btn, .delete-btn {
+	cursor: pointer;
+	color: #000;
+}
+
 /*_____HEADER______*/
 
 .todo-icon {
@@ -19,6 +30,38 @@
 	width: 100%;
 	overflow: auto;
 }
+
+/*_____BOARDS_____*/
+
+.board {
+	width: 270px;
+	float: left;
+	margin: 0 5px 10px;
+}
+
+.board-placeholder {
+	cursor: pointer;
+}
+
+/*_____CARDS_____*/
+
+.card-list {
+	min-width: 238px;
+	min-height: 42px;
+}
+
+.card {
+	background: #f5f5f5;
+	word-wrap: break-word;
+	cursor: pointer;
+}
+
+.card:hover {
+	background: #0067a3;
+	color: #fff;
+}
+
+
 
 /*______OVERRIDE BOOTSTRAP STYLES_____*/
 

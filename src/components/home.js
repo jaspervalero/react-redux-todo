@@ -1,3 +1,10 @@
+/**
+ * react-redux-todo
+ * Home Component
+ *
+ * @author Jasper Valero <contact@jaspervalero.com>
+ * https://github.com/jaspervalero/react-redux-todo
+ */
 import React from 'react';
 
 export default () =>

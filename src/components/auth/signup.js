@@ -1,6 +1,6 @@
 /**
  * react-redux-todo
- * Custom Styles
+ * Signup Component
  *
  * @author Jasper Valero <contact@jaspervalero.com>
  * https://github.com/jaspervalero/react-redux-todo
