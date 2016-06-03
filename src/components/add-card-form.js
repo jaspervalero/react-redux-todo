@@ -16,7 +16,7 @@ class AddCardForm extends React.Component {
 		const { handleSubmit, fields: { title, description, assignee, due_date } } = this.props;
 
 		return (
-			<div className="add-card-form content">
+			<div className="add-card-form content container">
 				<form onSubmit={ handleSubmit( this.onFormSubmit.bind( this ) ) }>
 					<fieldset className="form-group">
 						<label>Title:</label>
