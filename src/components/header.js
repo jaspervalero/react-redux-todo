@@ -12,7 +12,7 @@ class Header extends React.Component {
 
 	render() {
 		return (
-			<nav className="navbar navbar-default navbar-fixed-top">
+			<nav className="header navbar navbar-default navbar-fixed-top">
 				<Link to="/" className="navbar-brand">
 					<span className="todo-icon glyphicon glyphicon-th-list" /> TODO
 				</Link>

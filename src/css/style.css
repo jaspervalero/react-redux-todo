@@ -6,8 +6,41 @@
  * https://github.com/jaspervalero/react-redux-todo
  */
 
-/*_____ HEADER ______*/
+/*_____HEADER______*/
 
 .todo-icon {
 	font-size: 15px;
+}
+
+/*_____CONTENT_____*/
+
+.content {
+	margin-top: 70px;
+	width: 100%;
+	overflow: auto;
+}
+
+/*______OVERRIDE BOOTSTRAP STYLES_____*/
+
+.navbar-default {
+	background: #0067a3;
+	border-color: #004f7c;
+}
+
+.navbar-default .navbar-brand {
+	color: #fff;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
 }
